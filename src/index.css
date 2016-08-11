@@ -1,5 +1,32 @@
 body {
   margin: 0;
   padding: 0;
+  color: #454421;
   font-family: sans-serif;
+  background-color: #f8ffe6;
+}
+
+.app {
+  display: flex;
+}
+
+.app h3 {
+  font-family: monospace;
+}
+
+nav {
+  padding: 1em;
+}
+
+h1 {
+  margin-left: 0.5em;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  margin: 1em auto;
 }

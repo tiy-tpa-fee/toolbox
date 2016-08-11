@@ -1,0 +1,16 @@
+{
+  "tools": {
+    "JavaScript": {
+      "pronunciation": "ˈjä-vē-skript",
+      "description": "JavaScript is a high-level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification."
+    },
+    "React": {
+      "pronunciation": "rē-ˈakt",
+      "description": "A JavaScript library for building user interfaces."
+    },
+    "webpack": {
+      "pronunciation": "web-ˈpak",
+      "description": "webpack is a module bundler. This means webpack takes modules with dependencies and emits static assets representing those modules."
+    }
+  }
+}
