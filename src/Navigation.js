@@ -3,11 +3,11 @@ import React, { Component } from 'react'
 class Navigation extends Component {
 
   termClickHandler = (term) => {
-    this.props.onNavigate('tool', term)
+    window.location.hash = `/tool/${term}`
   }
 
   aboutClickHandler = (event) => {
-    this.props.onNavigate('about')
+    window.location.hash = `/about`
     event.preventDefault()
   }
 

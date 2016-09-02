@@ -16,8 +16,10 @@ class App extends Component {
   }
 
   // `term` will be undefined on the About page.
-  navigateTo = (screen, term) => {
-    console.log(screen, term)
+  navigateTo = () => {
+    const screen = window.location.hash.split('/')[1]
+    const term = window.location.hash.split('/')[2]
+
     this.setState({
       currentScreen: screen,
       currentTerm: term
@@ -25,7 +27,11 @@ class App extends Component {
   }
 
   goHome = () => {
-    this.navigateTo('home')
+    window.location.hash = '/'
+  }
+
+  componentDidMount () {
+    window.addEventListener('hashchange', this.navigateTo)
   }
 
   render () {
@@ -46,7 +52,7 @@ class App extends Component {
     return <div className="app">
       <aside>
         <h1 onClick={this.goHome}>Tools</h1>
-        <Navigation terms={terms} onNavigate={this.navigateTo} />
+        <Navigation terms={terms} />
       </aside>
       <main>
         {screen}
